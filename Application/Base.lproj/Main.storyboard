@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ujm-zL-yCK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,52 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Splash View Controller-->
-        <scene sceneID="MPZ-qa-7ZG">
-            <objects>
-                <viewController storyboardIdentifier="SplashViewController" id="FJy-kz-xSW" customClass="SplashViewController" customModule="Application" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jMI-YC-YA3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minimal-gradient-iPhone-X-wallpaper-by-danielghuffman-purple" translatesAutoresizingMaskIntoConstraints="NO" id="4cW-Ar-D3H">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gus" translatesAutoresizingMaskIntoConstraints="NO" id="BI9-UP-gEU">
-                                <rect key="frame" x="182" y="423" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="AU7-Xd-MkR"/>
-                                    <constraint firstAttribute="width" secondItem="BI9-UP-gEU" secondAttribute="height" multiplier="1:1" id="BlT-wh-Xs2"/>
-                                </constraints>
-                            </imageView>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ozp-4M-22O">
-                                <rect key="frame" x="87" y="706" width="240" height="128"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="4e0-hs-Pbb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="BI9-UP-gEU" firstAttribute="centerY" secondItem="4cW-Ar-D3H" secondAttribute="centerY" id="67f-V9-D6d"/>
-                            <constraint firstItem="Ozp-4M-22O" firstAttribute="leading" secondItem="4e0-hs-Pbb" secondAttribute="leading" constant="87" id="6Hv-pa-wjg"/>
-                            <constraint firstItem="4cW-Ar-D3H" firstAttribute="bottom" secondItem="Ozp-4M-22O" secondAttribute="bottom" constant="62" id="6Kn-7J-9Gn"/>
-                            <constraint firstItem="BI9-UP-gEU" firstAttribute="centerX" secondItem="4cW-Ar-D3H" secondAttribute="centerX" id="IIg-lp-j0z"/>
-                            <constraint firstAttribute="trailing" secondItem="4cW-Ar-D3H" secondAttribute="trailing" id="IRt-IX-idp"/>
-                            <constraint firstItem="Ozp-4M-22O" firstAttribute="top" secondItem="BI9-UP-gEU" secondAttribute="bottom" constant="233" id="LZC-S1-orT"/>
-                            <constraint firstAttribute="bottom" secondItem="4cW-Ar-D3H" secondAttribute="bottom" id="gXr-IH-WnI"/>
-                            <constraint firstItem="Ozp-4M-22O" firstAttribute="centerX" secondItem="4cW-Ar-D3H" secondAttribute="centerX" id="o4m-km-CLu"/>
-                            <constraint firstItem="4cW-Ar-D3H" firstAttribute="leading" secondItem="jMI-YC-YA3" secondAttribute="leading" id="pKh-rj-NSa"/>
-                            <constraint firstItem="4cW-Ar-D3H" firstAttribute="top" secondItem="jMI-YC-YA3" secondAttribute="top" id="zjY-c2-OtC"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="logoImageView" destination="BI9-UP-gEU" id="fdj-R9-7CG"/>
-                        <outlet property="textImageView" destination="Ozp-4M-22O" id="gmT-4q-aTi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ga7-9S-vbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1455" y="-188"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -197,6 +151,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-220" y="-188"/>
+        </scene>
+        <!--AuthVK View Controller-->
+        <scene sceneID="Htg-bV-ohZ">
+            <objects>
+                <viewController id="ujm-zL-yCK" customClass="AuthVKViewController" customModule="Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3hK-xH-cP0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTv-g3-JQk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Kf-gC-kev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FTv-g3-JQk" firstAttribute="top" secondItem="3hK-xH-cP0" secondAttribute="top" id="N8a-mz-BUj"/>
+                            <constraint firstAttribute="bottom" secondItem="FTv-g3-JQk" secondAttribute="bottom" id="cFV-CD-lFA"/>
+                            <constraint firstItem="FTv-g3-JQk" firstAttribute="leading" secondItem="8Kf-gC-kev" secondAttribute="leading" id="eoa-ZC-9Pe"/>
+                            <constraint firstItem="FTv-g3-JQk" firstAttribute="trailing" secondItem="8Kf-gC-kev" secondAttribute="trailing" id="zZo-Vc-5ys"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="FTv-g3-JQk" id="zlL-qP-rVK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zw5-oh-fPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220.28985507246378" y="481.47321428571428"/>
         </scene>
         <!--Новости-->
         <scene sceneID="gyD-Gw-7Gh">
@@ -723,9 +711,7 @@
         <image name="bubble.right" catalog="system" width="128" height="110"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="folder.badge.person.crop" catalog="system" width="128" height="91"/>
-        <image name="gus" width="90" height="90"/>
         <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="minimal-gradient-iPhone-X-wallpaper-by-danielghuffman-purple" width="3375" height="7308"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
