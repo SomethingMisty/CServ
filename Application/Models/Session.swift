@@ -9,6 +9,6 @@ class Session {
     
     private init() {}
     
-    let token: String = ""
-    let userID: Int = 0
+    var token: String?
+    var userID: Int?
 }
